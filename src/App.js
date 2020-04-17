@@ -49,7 +49,6 @@ class App extends React.Component {
       self.setStateSocial(social, 'L');
       axios.get("https://api.baejino.com/bnc?url=" + url)
       .then(response => {
-        console.log(response);
         if(JSON.stringify(response.data).includes(checker) || response.status === 404) {
           self.setStateSocial(social, 'S');
         } else {
