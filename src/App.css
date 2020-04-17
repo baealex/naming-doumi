@@ -8,9 +8,9 @@ body {
 .App {
   padding-top: 10px;
   margin: 0 auto;
-  max-width: 100%;
   width: 450px;
-  padding: 15px 0;
+  max-width: calc(100% - 30px);
+  padding: 15px 15px 0px 15px;
 }
 
 .basic {
@@ -64,6 +64,11 @@ body {
   background-color: #706fd3;
   color: #fff;
   cursor: pointer;
+}
+
+.social-name a {
+  color: #474787;
+  text-decoration: none;
 }
 
 .footer {

@@ -14,7 +14,7 @@ class Social extends React.Component {
     }
     return (
       <div className="card">
-        <span className="social-name">{this.props.name}</span>
+        <span className="social-name"><a href={`https://${this.props.name}`}>{this.props.name}</a></span>
         <span className="social-icon">{icon}</span>
       </div>
     );
