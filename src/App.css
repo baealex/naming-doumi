@@ -1,0 +1,76 @@
+@font-face { font-family: 'MapoPeacefull'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoPeacefullA.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+body {
+  font-family: 'MapoPeacefull';
+  background-color: #f7faff;
+}
+
+.App {
+  padding-top: 10px;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 450px;
+  padding: 15px 0;
+}
+
+.basic {
+  width: 100%;
+  box-shadow: 0 4px 6px 0 hsla(0, 0%, 0%, 0.2);
+  border-radius: 5px;
+  padding: 10px 5px;
+  font-size: 17px;
+  border: none;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 3px 6px 0 hsla(0, 0%, 0%, 0.1);
+  padding: 20px 10px;
+  font-size: 17px;
+  border: none;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.social-icon {
+  float: right;
+}
+
+.fa-check {
+  color: #22d631;
+}
+
+.fa-times {
+  color: #ff4343;
+}
+
+*:focus {
+  outline: none;
+}
+
+.input {
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid rgb(112, 111, 211, 0);
+}
+.input:focus {
+  border: 1px solid rgb(112, 111, 211, 1);
+}
+
+.button {
+  background-color: #706fd3;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+}
+
+.footer a {
+  color: #8c00ff;
+  text-decoration: none;
+}
