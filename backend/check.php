@@ -1,5 +1,7 @@
 <?php
-    header("Access-Control-Allow-Origin: https://snsnc.baejino.com");
+    include_once 'requests.php';
+
+    header("Access-Control-Allow-Origin: https://snsnc.doum.app");
     header("Access-Control-Allow-Methods: GET");
     
     $method = $_SERVER["REQUEST_METHOD"];
@@ -55,16 +57,11 @@
         );
         
         $index = -1;
+        $requests = new Requests();
         foreach ($social_checker as $key => $value) {
             if(strpos($social, $key) !== false) {
-                $ch = curl_init();
-                curl_setopt($ch, CURLOPT_URL, $value[0]);
-                curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 100);
-                curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-                
-                $response = curl_exec($ch);
-                curl_close($ch);
+                $url =  $value[0];
+                $response = $requests->get($url);
 
                 $result = 'N';
                 if(strpos($response, $value[1]) !== false) {
