@@ -1,8 +1,5 @@
 <?php
     include_once 'requests.php';
-
-    header("Access-Control-Allow-Origin: https://snsnc.doum.app");
-    header("Access-Control-Allow-Methods: GET");
     
     $method = $_SERVER["REQUEST_METHOD"];
     if(strcmp($method, 'GET') == false) {
